@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.escapeland.app.R;
 
-public class LinkAlreadySendActivity extends AppCompatActivity implements View.OnClickListener{
+public class    LinkAlreadySendActivity extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
