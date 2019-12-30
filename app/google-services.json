@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "15765311189",
+    "firebase_url": "https://my-project-70867.firebaseio.com",
+    "project_id": "my-project-70867",
+    "storage_bucket": "my-project-70867.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15765311189:android:f54697d2b921a158605c5c",
+        "android_client_info": {
+          "package_name": "com.escapeland.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15765311189-bv6svsljbie1qs1p7f37mujh9k1fbb1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.escapeland.app",
+            "certificate_hash": "4e5cdaf2e7611c602c4f84be6f86a519930f5e76"
+          }
+        },
+        {
+          "client_id": "15765311189-rq8sn997m1majhgfe01akeua04fhlqor.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIqy5Kcg5LaLLtASW6KQxqnbpdDPZ3-Ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15765311189-rq8sn997m1majhgfe01akeua04fhlqor.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

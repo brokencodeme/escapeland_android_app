@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_icon"
+            android:icon="@drawable/ic_home_icon"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/about_icon"
+            android:icon="@drawable/ic_about_icon"
+            android:title="About"/>
+        <item
+            android:id="@+id/location_icon"
+            android:icon="@drawable/ic_logout_icon"
+            android:title="Location"/>
+
+        <item
+            android:id="@+id/book_now_icon"
+            android:icon="@drawable/ic_r1pmdx"
+            android:title="Book now"/>
+
+        <item
+            android:id="@+id/logout_icon"
+            android:icon="@drawable/ic_switch_off_icon"
+            android:title="Logout"/>
+
+    </group>
+</menu>

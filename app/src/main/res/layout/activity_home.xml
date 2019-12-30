@@ -1,0 +1,119 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="false"
+    tools:openDrawer="start"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.mxn.soul.flowingpager_core.FlowingPager
+        android:id="@+id/pagerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:edContentBackground="#3F4543"
+        app:edCrackWidth="0dp"
+        app:edIconSize="45dp"
+        app:edMarginBottom="50dp"
+        app:edMenuBackground="#3F4543"
+        app:edPosition="2"
+        app:edMaxAnimationDuration="300"
+        app:edSlideRange="0.3">
+
+        <com.mxn.soul.flowingpager_core.FlowingContentLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:background="#000"
+                android:layout_height="match_parent">
+
+                <VideoView
+                    android:id="@+id/home_page_video_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent">
+                </VideoView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/home_recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/general_appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    app:layout_constraintVertical_bias=".95"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/home_bottom_appbar"
+                        android:layout_width="match_parent"
+                        android:theme="@style/CustomActionBar"
+                        android:layout_height="?attr/actionBarSize">
+                    </androidx.appcompat.widget.Toolbar>
+
+                </com.google.android.material.appbar.AppBarLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.mxn.soul.flowingpager_core.FlowingContentLayout>
+
+        <!--menu-->
+        <com.mxn.soul.flowingpager_core.FlowingMenuLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/sliding_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.mxn.soul.flowingpager_core.FlowingMenuLayout>
+
+        <!--button -->
+        <com.escapeland.app.PlayPauseView
+            android:id="@+id/flowingbutton"
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:padding="0dp"
+            app:anim_direction="positive"
+            app:space_padding="10dp"
+            app:anim_duration="300"
+            app:bg_color="#3F4543"
+            app:btn_color="#fff"
+            />
+    </com.mxn.soul.flowingpager_core.FlowingPager>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#353535"
+        app:itemIconTint="#817889"
+        app:itemTextColor="@color/whiteColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/coordinatorLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/drawer_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

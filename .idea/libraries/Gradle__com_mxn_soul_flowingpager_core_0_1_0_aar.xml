@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mxn.soul:flowingpager_core:0.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/637951b68de03088450e349404185db2/flowingpager_core-0.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/637951b68de03088450e349404185db2/flowingpager_core-0.1.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mxn.soul/flowingpager_core/0.1.0/db0a8fb997a2e2525aa3f33520c9a31739537612/flowingpager_core-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

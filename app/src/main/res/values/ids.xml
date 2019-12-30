@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="about_us_toolbar" type="id"/>
+    <item name="contact_us_toolbar" type="id"/>
+    <item name="meet_ups_toolbar" type="id"/>
+    <item name="location_toolbar" type="id"/>
+
+</resources>
